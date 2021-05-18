@@ -37,7 +37,9 @@ for (let i=2; i<11; i+=2) {
   console.log(i);
 }
 
-// Another way I found while Googling. Add an if statement with the remainder operator (%) and divide each number by 2. If the remainder is exactly 0 then it will log the number giving only even numbers. Set comparison to less than 11 so that the loop stops at 10. This method checks if number is even rather than counting by 2's. Source: https://wsvincent.com/javascript-print-odd-or-even-numbers/
+/*
+Another way I found while Googling. Add an if statement with the remainder operator (%) and divide each number by 2. If the remainder is exactly 0 then it will log the number giving only even numbers. Set comparison to less than 11 so that the loop stops at 10. This method checks if number is even rather than counting by 2's. Source: https://wsvincent.com/javascript-print-odd-or-even-numbers/
+*/
 for (let i=1; i<11; i++){
   if(i % 2 === 0) {
     console.log(i);
@@ -67,7 +69,9 @@ console.log('---- 3. While loop ----');
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
 
-// I struggled with this one and figuring out how to use the array.length I used these sources to piece it together: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length and https://www.w3schools.com/js/js_loop_while.asp
+/*
+I struggled with this one and figuring out how to use the array.length I used these sources to piece it together: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length and https://www.w3schools.com/js/js_loop_while.asp
+*/
 let i = 0;
 while (i < stars.length){
   console.log(stars[i]);
@@ -87,7 +91,9 @@ while(index < max){
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
 
-// I enclosed the whole code block in curly brackets because I was getting an error that 'index' had already been defined. Does this work? Based on some Googling it has to do with 'let' being block scoped throughout the whole program. I need some help with this. Source: https://stackoverflow.com/questions/53613456/wrapping-an-entire-js-code-block-within-in-es6
+/*
+I enclosed the whole code block in curly brackets because I was getting an error that 'index' had already been defined. Does this work? Based on some Googling it has to do with 'let' being block scoped throughout the whole program. I need some help with this. Source: https://stackoverflow.com/questions/53613456/wrapping-an-entire-js-code-block-within-in-es6
+*/
 {let index = 10;
 while(index > 4){
   console.log(index);
